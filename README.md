@@ -6,30 +6,23 @@ search paradigm, combined with two specially designed heuristics to improve the 
 
 ## How to use it?   
 ### Step I. Install
-   1. download (or clone) the source code from https://github.com/chandrashekar-cds/bss-ged-gpu
-   2. Compile the source code. 
-### Step II. run BSS_GED
-   1. run the shell command: "./ged database n query m bound w t h", where    
-       (1) database is the graph database.       
-       (2) n is the number of graphs in the database.        
-       (3) query is the set of query graphs. 
-       (4) m is the number of graphs in the query.     
-       (5) bound is the GED threshold. Specifically, bound = -1 means that we perform the exact 
+   1. download (or clone) the source code from https://github.com/chandrashekar-cds/omp-bss-ged.git
+   2. Compile the source code using make. 
+### Step II. run omp-bss-ged
+   1. run the shell command: "./ged -i graph200v.txt -n 1 -q test200v.txt -m 1 -b -1 -w 10 -t 1 -h 2", where    
+       (1) -i input graphs file.       
+       (2) -n is the number of graphs in the database.        
+       (3) -q is the set of query graphs file. 
+       (4) -m is the number of graphs in the query.     
+       (5) -b is the GED threshold. Specifically, -1 means that we perform the exact 
            GED computation; and otherwise, we perform the threshold-based graph similarity search.        
-       (6) w is the beam width.      
-       (7) t is the no of threads
-       (8) h is the heuristic value     
+       (6) -w is the beam width.      
+       (7) -t is the no of threads
+       (8) -h is the heuristic value     
       
 ---------------------------------------------------------------------------------------------------------------------------
 Test-case
 
-Original - ./ged trial.data 5 tryquery.data 2 -1 10
-
-After some additions and modifications
-
-./ged graph400v.txt 1 test400v.txt  1 -1 10 1 2
-
-After modifying the way arguments are accepted
 ./ged -i graph200v.txt -n 1 -q test200v.txt -m 1 -b -1 -w 10 -t 1 -h 2
 
 ---------------------------------------------------------------------------------------------------------------------------
