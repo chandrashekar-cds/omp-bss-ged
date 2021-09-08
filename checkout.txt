@@ -1,0 +1,54 @@
+Hi..inside get-edit-dist 
+g1.edgeinfo over...
+g2.edgeinfo over...
+init common labels done
+lower_bound = 3 bound = 44
+entering memset
+memset done
+some initializations done
+4 for loops done..  size1 = 11size2 = 11
+ safely back from degree edit dist
+tmp = 1 ie = 1 de = 0
+tmp = 3 commonVertex = 11
+lower_bound = 3 bound = 44
+s1 >= s2
+this->len = 1
+this->len = 1
+Inside gensucc
+ Initial cost = 0
+Start = 3
+ end = 3
+ Initial cost = 0
+Start = 3
+ end = 10
+ Initial cost = 0
+Start = 3
+ end = 13
+ Initial cost = 0
+Start = 3
+ end = 11
+ Initial cost = 0
+Start = 3
+ end = 10
+ Initial cost = 0
+Start = 3
+ end = 5
+ Initial cost = 0
+Start = 3
+ end = 13
+ Initial cost = 0
+Start = 3
+ end = 2
+ Initial cost = 0
+Start = 3
+ end = 19
+ Initial cost = 0
+Start = 3
+ end = 15
+ Initial cost = 0
+Start = 3
+ end = 0
+ BeamSearchOnce:	Time taken(ms) = 0
+total expand node 11
+initFilter and total results 1 0
+Total graph edit distance computation time 0.000947

@@ -1,0 +1,1987 @@
+desc: (none)
+cmd: ./ged graph200v.txt 1 test200v.txt 1 -1 10
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=217374088
+mem_heap_B=7401072
+mem_heap_extra_B=668784
+mem_stacks_B=0
+heap_tree=detailed
+n11: 7401072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+ n1: 1572872 0x4037B3: bitmap::bitmap() (bitmap.cpp:15)
+  n1: 1572872 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+   n1: 1572872 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+    n0: 1572872 0x53E97BD: (below main) (libc-start.c:247)
+ n1: 639200 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 639200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 639200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 639200 0x402859: main (ged.cpp:46)
+ n0: 347464 in 53 places, all below massif's threshold (1.00%)
+ n1: 345168 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 345168 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 345168 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 345168 0x402859: main (ged.cpp:46)
+ n1: 319600 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 319600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 319600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 319600 0x402859: main (ged.cpp:46)
+ n1: 319600 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 319600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 319600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 319600 0x402859: main (ged.cpp:46)
+ n1: 319600 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 319600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 319600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 319600 0x402859: main (ged.cpp:46)
+ n1: 319600 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 319600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 319600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 319600 0x402859: main (ged.cpp:46)
+ n1: 159800 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 159800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 159800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 159800 0x402859: main (ged.cpp:46)
+ n1: 159800 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 159800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 159800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 159800 0x402859: main (ged.cpp:46)
+#-----------
+snapshot=2
+#-----------
+time=489339928
+mem_heap_B=45619260
+mem_heap_extra_B=2506828
+mem_stacks_B=0
+heap_tree=detailed
+n13: 45619260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 9593600 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 9593600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 9593600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 9593600 0x402859: main (ged.cpp:46)
+ n1: 5180544 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 5180544 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5180544 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5180544 0x402859: main (ged.cpp:46)
+ n1: 4796800 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 4796800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4796800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4796800 0x402859: main (ged.cpp:46)
+ n1: 4796800 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 4796800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4796800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4796800 0x402859: main (ged.cpp:46)
+ n1: 4796800 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 4796800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4796800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4796800 0x402859: main (ged.cpp:46)
+ n1: 4796800 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 4796800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4796800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4796800 0x402859: main (ged.cpp:46)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+ n1: 2398400 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 2398400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 2398400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 2398400 0x402859: main (ged.cpp:46)
+ n1: 2398400 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 2398400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 2398400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 2398400 0x402859: main (ged.cpp:46)
+ n1: 1572872 0x4037B3: bitmap::bitmap() (bitmap.cpp:15)
+  n1: 1572872 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+   n1: 1572872 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+    n0: 1572872 0x53E97BD: (below main) (libc-start.c:247)
+ n1: 983344 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 983344 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 983344 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 983344 0x402859: main (ged.cpp:46)
+ n1: 983344 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 983344 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 983344 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 983344 0x402859: main (ged.cpp:46)
+ n0: 423188 in 51 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=791762127
+mem_heap_B=78665616
+mem_heap_extra_B=4095936
+mem_stacks_B=0
+heap_tree=detailed
+n13: 78665616 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 17335200 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 17335200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 17335200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 17335200 0x402859: main (ged.cpp:46)
+ n1: 9361008 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 9361008 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 9361008 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 9361008 0x402859: main (ged.cpp:46)
+ n1: 8667600 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 8667600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8667600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8667600 0x402859: main (ged.cpp:46)
+ n1: 8667600 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 8667600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8667600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8667600 0x402859: main (ged.cpp:46)
+ n1: 8667600 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 8667600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8667600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8667600 0x402859: main (ged.cpp:46)
+ n1: 8667600 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 8667600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8667600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8667600 0x402859: main (ged.cpp:46)
+ n1: 4333800 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 4333800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4333800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4333800 0x402859: main (ged.cpp:46)
+ n1: 4333800 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 4333800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4333800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4333800 0x402859: main (ged.cpp:46)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+ n1: 1776858 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 1776858 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 1776858 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 1776858 0x402859: main (ged.cpp:46)
+ n1: 1776858 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 1776858 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 1776858 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 1776858 0x402859: main (ged.cpp:46)
+ n1: 1572872 0x4037B3: bitmap::bitmap() (bitmap.cpp:15)
+  n1: 1572872 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+   n1: 1572872 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+    n0: 1572872 0x53E97BD: (below main) (libc-start.c:247)
+ n0: 606452 in 51 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=920115794
+mem_heap_B=91405444
+mem_heap_extra_B=4708652
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1122038898
+mem_heap_B=109797152
+mem_heap_extra_B=5593000
+mem_stacks_B=0
+heap_tree=detailed
+n13: 109797152 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 24628000 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 24628000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 24628000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 24628000 0x402859: main (ged.cpp:46)
+ n1: 13299120 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 13299120 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13299120 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13299120 0x402859: main (ged.cpp:46)
+ n1: 12314000 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 12314000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 12314000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 12314000 0x402859: main (ged.cpp:46)
+ n1: 12314000 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 12314000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 12314000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 12314000 0x402859: main (ged.cpp:46)
+ n1: 12314000 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 12314000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 12314000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 12314000 0x402859: main (ged.cpp:46)
+ n1: 12314000 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 12314000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 12314000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 12314000 0x402859: main (ged.cpp:46)
+ n1: 6157000 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 6157000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 6157000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 6157000 0x402859: main (ged.cpp:46)
+ n1: 6157000 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 6157000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 6157000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 6157000 0x402859: main (ged.cpp:46)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+ n1: 2524370 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 2524370 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 2524370 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 2524370 0x402859: main (ged.cpp:46)
+ n1: 2524370 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 2524370 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 2524370 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 2524370 0x402859: main (ged.cpp:46)
+ n1: 1572872 0x4037B3: bitmap::bitmap() (bitmap.cpp:15)
+  n1: 1572872 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+   n1: 1572872 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+    n0: 1572872 0x53E97BD: (below main) (libc-start.c:247)
+ n0: 780052 in 51 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=1251116609
+mem_heap_B=121026528
+mem_heap_extra_B=6133000
+mem_stacks_B=0
+heap_tree=detailed
+n13: 121026528 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 27258400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 27258400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 27258400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 27258400 0x402859: main (ged.cpp:46)
+ n1: 14719536 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 14719536 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14719536 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14719536 0x402859: main (ged.cpp:46)
+ n1: 13629200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 13629200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13629200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13629200 0x402859: main (ged.cpp:46)
+ n1: 13629200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 13629200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13629200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13629200 0x402859: main (ged.cpp:46)
+ n1: 13629200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 13629200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13629200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13629200 0x402859: main (ged.cpp:46)
+ n1: 13629200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 13629200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13629200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13629200 0x402859: main (ged.cpp:46)
+ n1: 6814600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 6814600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 6814600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 6814600 0x402859: main (ged.cpp:46)
+ n1: 6814600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 6814600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 6814600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 6814600 0x402859: main (ged.cpp:46)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+ n1: 2793986 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 2793986 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 2793986 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 2793986 0x402859: main (ged.cpp:46)
+ n1: 2793986 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 2793986 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 2793986 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 2793986 0x402859: main (ged.cpp:46)
+ n1: 1572872 0x4037B3: bitmap::bitmap() (bitmap.cpp:15)
+  n1: 1572872 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+   n1: 1572872 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+    n0: 1572872 0x53E97BD: (below main) (libc-start.c:247)
+ n0: 843380 in 51 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=1461510257
+mem_heap_B=138670192
+mem_heap_extra_B=6981440
+mem_stacks_B=0
+heap_tree=detailed
+n13: 138670192 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 31391200 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 31391200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 31391200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 31391200 0x402859: main (ged.cpp:46)
+ n1: 16951248 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 16951248 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 16951248 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 16951248 0x402859: main (ged.cpp:46)
+ n1: 15695600 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 15695600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15695600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15695600 0x402859: main (ged.cpp:46)
+ n1: 15695600 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 15695600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15695600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15695600 0x402859: main (ged.cpp:46)
+ n1: 15695600 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 15695600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15695600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15695600 0x402859: main (ged.cpp:46)
+ n1: 15695600 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 15695600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15695600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15695600 0x402859: main (ged.cpp:46)
+ n1: 7847800 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 7847800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 7847800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 7847800 0x402859: main (ged.cpp:46)
+ n1: 7847800 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 7847800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 7847800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 7847800 0x402859: main (ged.cpp:46)
+ n1: 3217598 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 3217598 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 3217598 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 3217598 0x402859: main (ged.cpp:46)
+ n1: 3217598 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 3217598 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 3217598 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 3217598 0x402859: main (ged.cpp:46)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+ n1: 1572872 0x4037B3: bitmap::bitmap() (bitmap.cpp:15)
+  n1: 1572872 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+   n1: 1572872 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+    n0: 1572872 0x53E97BD: (below main) (libc-start.c:247)
+ n0: 943308 in 52 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=1766617527
+mem_heap_B=163129420
+mem_heap_extra_B=8157540
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1892409829
+mem_heap_B=172575000
+mem_heap_extra_B=8611656
+mem_stacks_B=0
+heap_tree=detailed
+n12: 172575000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 39332000 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 39332000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39332000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39332000 0x402859: main (ged.cpp:46)
+ n1: 21239280 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 21239280 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 21239280 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 21239280 0x402859: main (ged.cpp:46)
+ n1: 19666000 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 19666000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 19666000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 19666000 0x402859: main (ged.cpp:46)
+ n1: 19666000 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 19666000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 19666000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 19666000 0x402859: main (ged.cpp:46)
+ n1: 19666000 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 19666000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 19666000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 19666000 0x402859: main (ged.cpp:46)
+ n1: 19666000 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 19666000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 19666000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 19666000 0x402859: main (ged.cpp:46)
+ n1: 9833000 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 9833000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 9833000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 9833000 0x402859: main (ged.cpp:46)
+ n1: 9833000 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 9833000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 9833000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 9833000 0x402859: main (ged.cpp:46)
+ n1: 4031530 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 4031530 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4031530 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4031530 0x402859: main (ged.cpp:46)
+ n1: 4031530 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 4031530 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4031530 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4031530 0x402859: main (ged.cpp:46)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+ n0: 2712292 in 53 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=2148456043
+mem_heap_B=191044076
+mem_heap_extra_B=9499724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2299007807
+mem_heap_B=201528568
+mem_heap_extra_B=10003808
+mem_stacks_B=0
+heap_tree=detailed
+n12: 201528568 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 46112800 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 46112800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 46112800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 46112800 0x402859: main (ged.cpp:46)
+ n1: 24900912 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 24900912 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 24900912 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 24900912 0x402859: main (ged.cpp:46)
+ n1: 23056400 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 23056400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 23056400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 23056400 0x402859: main (ged.cpp:46)
+ n1: 23056400 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 23056400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 23056400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 23056400 0x402859: main (ged.cpp:46)
+ n1: 23056400 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 23056400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 23056400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 23056400 0x402859: main (ged.cpp:46)
+ n1: 23056400 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 23056400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 23056400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 23056400 0x402859: main (ged.cpp:46)
+ n1: 11528200 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 11528200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 11528200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 11528200 0x402859: main (ged.cpp:46)
+ n1: 11528200 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 11528200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 11528200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 11528200 0x402859: main (ged.cpp:46)
+ n1: 4726562 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 4726562 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4726562 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4726562 0x402859: main (ged.cpp:46)
+ n1: 4726562 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 4726562 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 4726562 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 4726562 0x402859: main (ged.cpp:46)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+ n0: 2881364 in 53 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=2486036725
+mem_heap_B=214313088
+mem_heap_extra_B=10618424
+mem_stacks_B=0
+heap_tree=detailed
+n12: 214313088 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 49106400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 49106400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 49106400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 49106400 0x402859: main (ged.cpp:46)
+ n1: 26517456 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 26517456 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 26517456 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 26517456 0x402859: main (ged.cpp:46)
+ n1: 24553200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 24553200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 24553200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 24553200 0x402859: main (ged.cpp:46)
+ n1: 24553200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 24553200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 24553200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 24553200 0x402859: main (ged.cpp:46)
+ n1: 24553200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 24553200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 24553200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 24553200 0x402859: main (ged.cpp:46)
+ n1: 24553200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 24553200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 24553200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 24553200 0x402859: main (ged.cpp:46)
+ n1: 12276600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 12276600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 12276600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 12276600 0x402859: main (ged.cpp:46)
+ n1: 12276600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 12276600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 12276600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 12276600 0x402859: main (ged.cpp:46)
+ n1: 5033406 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 5033406 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5033406 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5033406 0x402859: main (ged.cpp:46)
+ n1: 5033406 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 5033406 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5033406 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5033406 0x402859: main (ged.cpp:46)
+ n0: 2958052 in 53 places, all below massif's threshold (1.00%)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=2620496653
+mem_heap_B=223353000
+mem_heap_extra_B=11053056
+mem_stacks_B=0
+heap_tree=detailed
+n12: 223353000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 51223200 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 51223200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 51223200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 51223200 0x402859: main (ged.cpp:46)
+ n1: 27660528 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 27660528 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 27660528 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 27660528 0x402859: main (ged.cpp:46)
+ n1: 25611600 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 25611600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 25611600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 25611600 0x402859: main (ged.cpp:46)
+ n1: 25611600 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 25611600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 25611600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 25611600 0x402859: main (ged.cpp:46)
+ n1: 25611600 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 25611600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 25611600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 25611600 0x402859: main (ged.cpp:46)
+ n1: 25611600 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 25611600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 25611600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 25611600 0x402859: main (ged.cpp:46)
+ n1: 12805800 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 12805800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 12805800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 12805800 0x402859: main (ged.cpp:46)
+ n1: 12805800 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 12805800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 12805800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 12805800 0x402859: main (ged.cpp:46)
+ n1: 5250378 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 5250378 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5250378 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5250378 0x402859: main (ged.cpp:46)
+ n1: 5250378 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 5250378 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5250378 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5250378 0x402859: main (ged.cpp:46)
+ n0: 3012148 in 53 places, all below massif's threshold (1.00%)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=2870466736
+mem_heap_B=239840848
+mem_heap_extra_B=11845744
+mem_stacks_B=0
+heap_tree=detailed
+n12: 239840848 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 55084000 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 55084000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 55084000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 55084000 0x402859: main (ged.cpp:46)
+ n1: 29745360 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 29745360 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 29745360 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 29745360 0x402859: main (ged.cpp:46)
+ n1: 27542000 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 27542000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 27542000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 27542000 0x402859: main (ged.cpp:46)
+ n1: 27542000 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 27542000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 27542000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 27542000 0x402859: main (ged.cpp:46)
+ n1: 27542000 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 27542000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 27542000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 27542000 0x402859: main (ged.cpp:46)
+ n1: 27542000 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 27542000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 27542000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 27542000 0x402859: main (ged.cpp:46)
+ n1: 13771000 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 13771000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13771000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13771000 0x402859: main (ged.cpp:46)
+ n1: 13771000 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 13771000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13771000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13771000 0x402859: main (ged.cpp:46)
+ n1: 5646110 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 5646110 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5646110 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5646110 0x402859: main (ged.cpp:46)
+ n1: 5646110 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 5646110 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5646110 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5646110 0x402859: main (ged.cpp:46)
+ n0: 3110900 in 53 places, all below massif's threshold (1.00%)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=3026633701
+mem_heap_B=249934744
+mem_heap_extra_B=12330928
+mem_stacks_B=0
+heap_tree=detailed
+n12: 249934744 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57447200 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 57447200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 57447200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 57447200 0x402859: main (ged.cpp:46)
+ n1: 31021488 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 31021488 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 31021488 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 31021488 0x402859: main (ged.cpp:46)
+ n1: 28723600 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 28723600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 28723600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 28723600 0x402859: main (ged.cpp:46)
+ n1: 28723600 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 28723600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 28723600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 28723600 0x402859: main (ged.cpp:46)
+ n1: 28723600 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 28723600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 28723600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 28723600 0x402859: main (ged.cpp:46)
+ n1: 28723600 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 28723600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 28723600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 28723600 0x402859: main (ged.cpp:46)
+ n1: 14361800 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 14361800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14361800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14361800 0x402859: main (ged.cpp:46)
+ n1: 14361800 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 14361800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14361800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14361800 0x402859: main (ged.cpp:46)
+ n1: 5888338 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 5888338 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5888338 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5888338 0x402859: main (ged.cpp:46)
+ n1: 5888338 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 5888338 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 5888338 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 5888338 0x402859: main (ged.cpp:46)
+ n0: 3173012 in 53 places, all below massif's threshold (1.00%)
+ n2: 2898368 0x40399C: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (new_allocator.h:104)
+  n1: 2898364 0x4038D8: bitmap::bitmap() (stl_vector.h:923)
+   n1: 2898364 0x403929: bitmap::getInstance() (bitmap.cpp:9)
+    n1: 2898364 0x4134CB: __libc_csu_init (in /mnt/d/Research/bss-ged-gpu/ged)
+     n0: 2898364 0x53E97BD: (below main) (libc-start.c:247)
+  n0: 4 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=3304525263
+mem_heap_B=267576388
+mem_heap_extra_B=13179060
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=3478940390
+mem_heap_B=278508056
+mem_heap_extra_B=13704552
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=3715027581
+mem_heap_B=293216840
+mem_heap_extra_B=14411568
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=3916881492
+mem_heap_B=305390688
+mem_heap_extra_B=14996704
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=4041080208
+mem_heap_B=312636256
+mem_heap_extra_B=15344976
+mem_stacks_B=0
+heap_tree=detailed
+n11: 312636256 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72125600 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 72125600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72125600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72125600 0x402859: main (ged.cpp:46)
+ n1: 38947824 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 38947824 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38947824 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38947824 0x402859: main (ged.cpp:46)
+ n1: 36062800 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 36062800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36062800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36062800 0x402859: main (ged.cpp:46)
+ n1: 36062800 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 36062800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36062800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36062800 0x402859: main (ged.cpp:46)
+ n1: 36062800 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 36062800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36062800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36062800 0x402859: main (ged.cpp:46)
+ n1: 36062800 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 36062800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36062800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36062800 0x402859: main (ged.cpp:46)
+ n1: 18031400 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 18031400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 18031400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 18031400 0x402859: main (ged.cpp:46)
+ n1: 18031400 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 18031400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 18031400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 18031400 0x402859: main (ged.cpp:46)
+ n1: 7392874 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 7392874 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 7392874 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 7392874 0x402859: main (ged.cpp:46)
+ n1: 7392874 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 7392874 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 7392874 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 7392874 0x402859: main (ged.cpp:46)
+ n0: 6463084 in 54 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=4243382790
+mem_heap_B=324295332
+mem_heap_extra_B=15905356
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=4386293184
+mem_heap_B=332393872
+mem_heap_extra_B=16294552
+mem_stacks_B=0
+heap_tree=detailed
+n11: 332393872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 76749600 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 76749600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 76749600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 76749600 0x402859: main (ged.cpp:46)
+ n1: 41444784 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 41444784 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 41444784 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 41444784 0x402859: main (ged.cpp:46)
+ n1: 38374800 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 38374800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38374800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38374800 0x402859: main (ged.cpp:46)
+ n1: 38374800 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 38374800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38374800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38374800 0x402859: main (ged.cpp:46)
+ n1: 38374800 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 38374800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38374800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38374800 0x402859: main (ged.cpp:46)
+ n1: 38374800 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 38374800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38374800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38374800 0x402859: main (ged.cpp:46)
+ n1: 19187400 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 19187400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 19187400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 19187400 0x402859: main (ged.cpp:46)
+ n1: 19187400 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 19187400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 19187400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 19187400 0x402859: main (ged.cpp:46)
+ n1: 7866834 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 7866834 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 7866834 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 7866834 0x402859: main (ged.cpp:46)
+ n1: 7866834 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 7866834 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 7866834 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 7866834 0x402859: main (ged.cpp:46)
+ n0: 6591820 in 54 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=4569581703
+mem_heap_B=342642232
+mem_heap_extra_B=16787096
+mem_stacks_B=0
+heap_tree=detailed
+n11: 342642232 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 79148000 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 79148000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 79148000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 79148000 0x402859: main (ged.cpp:46)
+ n1: 42739920 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 42739920 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 42739920 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 42739920 0x402859: main (ged.cpp:46)
+ n1: 39574000 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 39574000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39574000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39574000 0x402859: main (ged.cpp:46)
+ n1: 39574000 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 39574000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39574000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39574000 0x402859: main (ged.cpp:46)
+ n1: 39574000 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 39574000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39574000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39574000 0x402859: main (ged.cpp:46)
+ n1: 39574000 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 39574000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39574000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39574000 0x402859: main (ged.cpp:46)
+ n1: 19787000 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 19787000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 19787000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 19787000 0x402859: main (ged.cpp:46)
+ n1: 19787000 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 19787000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 19787000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 19787000 0x402859: main (ged.cpp:46)
+ n1: 8112670 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 8112670 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8112670 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8112670 0x402859: main (ged.cpp:46)
+ n1: 8112670 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 8112670 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8112670 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8112670 0x402859: main (ged.cpp:46)
+ n0: 6658972 in 54 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=4761748127
+mem_heap_B=353219504
+mem_heap_extra_B=17295416
+mem_stacks_B=0
+heap_tree=detailed
+n11: 353219504 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 81623200 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 81623200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 81623200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 81623200 0x402859: main (ged.cpp:46)
+ n1: 44076528 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 44076528 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 44076528 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 44076528 0x402859: main (ged.cpp:46)
+ n1: 40811600 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 40811600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 40811600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 40811600 0x402859: main (ged.cpp:46)
+ n1: 40811600 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 40811600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 40811600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 40811600 0x402859: main (ged.cpp:46)
+ n1: 40811600 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 40811600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 40811600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 40811600 0x402859: main (ged.cpp:46)
+ n1: 40811600 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 40811600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 40811600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 40811600 0x402859: main (ged.cpp:46)
+ n1: 20405800 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 20405800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 20405800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 20405800 0x402859: main (ged.cpp:46)
+ n1: 20405800 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 20405800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 20405800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 20405800 0x402859: main (ged.cpp:46)
+ n1: 8366378 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 8366378 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8366378 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8366378 0x402859: main (ged.cpp:46)
+ n1: 8366378 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 8366378 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8366378 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8366378 0x402859: main (ged.cpp:46)
+ n0: 6729020 in 54 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=4927123982
+mem_heap_B=362309980
+mem_heap_extra_B=17732340
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=5168217655
+mem_heap_B=375281596
+mem_heap_extra_B=18355716
+mem_stacks_B=0
+heap_tree=detailed
+n11: 375281596 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 86785600 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 86785600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 86785600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 86785600 0x402859: main (ged.cpp:46)
+ n1: 46864224 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 46864224 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 46864224 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 46864224 0x402859: main (ged.cpp:46)
+ n1: 43392800 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 43392800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 43392800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 43392800 0x402859: main (ged.cpp:46)
+ n1: 43392800 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 43392800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 43392800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 43392800 0x402859: main (ged.cpp:46)
+ n1: 43392800 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 43392800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 43392800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 43392800 0x402859: main (ged.cpp:46)
+ n1: 43392800 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 43392800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 43392800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 43392800 0x402859: main (ged.cpp:46)
+ n1: 21696400 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 21696400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 21696400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 21696400 0x402859: main (ged.cpp:46)
+ n1: 21696400 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 21696400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 21696400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 21696400 0x402859: main (ged.cpp:46)
+ n1: 8895524 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 8895524 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8895524 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8895524 0x402859: main (ged.cpp:46)
+ n1: 8895524 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 8895524 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 8895524 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 8895524 0x402859: main (ged.cpp:46)
+ n0: 6876724 in 54 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=5375385890
+mem_heap_B=386295936
+mem_heap_extra_B=18884952
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=5672630211
+mem_heap_B=401985664
+mem_heap_extra_B=19638824
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=5827669949
+mem_heap_B=410082128
+mem_heap_extra_B=20028328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=5989774119
+mem_heap_B=418459076
+mem_heap_extra_B=20431460
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=6156536892
+mem_heap_B=426935252
+mem_heap_extra_B=20839348
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=6412104680
+mem_heap_B=439841164
+mem_heap_extra_B=21460380
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=6591008037
+mem_heap_B=448789652
+mem_heap_extra_B=21890948
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=6772495406
+mem_heap_B=457769104
+mem_heap_extra_B=22323024
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=6959062520
+mem_heap_B=466967364
+mem_heap_extra_B=22765604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=7090368048
+mem_heap_B=473398148
+mem_heap_extra_B=23075020
+mem_stacks_B=0
+heap_tree=detailed
+n11: 473398148 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 109772800 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 109772800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 109772800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 109772800 0x402859: main (ged.cpp:46)
+ n1: 59277312 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 59277312 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 59277312 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 59277312 0x402859: main (ged.cpp:46)
+ n1: 54886400 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 54886400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 54886400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 54886400 0x402859: main (ged.cpp:46)
+ n1: 54886400 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 54886400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 54886400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 54886400 0x402859: main (ged.cpp:46)
+ n1: 54886400 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 54886400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 54886400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 54886400 0x402859: main (ged.cpp:46)
+ n1: 54886400 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 54886400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 54886400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 54886400 0x402859: main (ged.cpp:46)
+ n1: 27443200 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 27443200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 27443200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 27443200 0x402859: main (ged.cpp:46)
+ n1: 27443200 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 27443200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 27443200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 27443200 0x402859: main (ged.cpp:46)
+ n1: 11251712 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 11251712 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 11251712 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 11251712 0x402859: main (ged.cpp:46)
+ n1: 11251712 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 11251712 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 11251712 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 11251712 0x402859: main (ged.cpp:46)
+ n0: 7412612 in 54 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=7284186266
+mem_heap_B=482866524
+mem_heap_extra_B=23530604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=7482837302
+mem_heap_B=492499508
+mem_heap_extra_B=23994084
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=7694918449
+mem_heap_B=502727876
+mem_heap_extra_B=24486172
+mem_stacks_B=0
+heap_tree=detailed
+n11: 502727876 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 116646400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 116646400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 116646400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 116646400 0x402859: main (ged.cpp:46)
+ n1: 62989056 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 62989056 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 62989056 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 62989056 0x402859: main (ged.cpp:46)
+ n1: 58323200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 58323200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 58323200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 58323200 0x402859: main (ged.cpp:46)
+ n1: 58323200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 58323200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 58323200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 58323200 0x402859: main (ged.cpp:46)
+ n1: 58323200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 58323200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 58323200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 58323200 0x402859: main (ged.cpp:46)
+ n1: 58323200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 58323200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 58323200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 58323200 0x402859: main (ged.cpp:46)
+ n1: 29161600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 29161600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 29161600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 29161600 0x402859: main (ged.cpp:46)
+ n1: 29161600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 29161600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 29161600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 29161600 0x402859: main (ged.cpp:46)
+ n1: 11956256 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 11956256 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 11956256 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 11956256 0x402859: main (ged.cpp:46)
+ n1: 11956256 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 11956256 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 11956256 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 11956256 0x402859: main (ged.cpp:46)
+ n0: 7563908 in 54 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=8005415375
+mem_heap_B=517449428
+mem_heap_extra_B=25194420
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=8227863093
+mem_heap_B=527789308
+mem_heap_extra_B=25691812
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=8456680891
+mem_heap_B=538307404
+mem_heap_extra_B=26197740
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=8693711034
+mem_heap_B=549124032
+mem_heap_extra_B=26718032
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=8936731247
+mem_heap_B=560119124
+mem_heap_extra_B=27246876
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=9185625237
+mem_heap_B=571348840
+mem_heap_extra_B=27786912
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=9474556225
+mem_heap_B=584320056
+mem_heap_extra_B=28410648
+mem_stacks_B=0
+heap_tree=detailed
+n11: 584320056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 135757600 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 135757600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 135757600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 135757600 0x402859: main (ged.cpp:46)
+ n1: 73309104 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 73309104 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 73309104 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 73309104 0x402859: main (ged.cpp:46)
+ n1: 67878800 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 67878800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 67878800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 67878800 0x402859: main (ged.cpp:46)
+ n1: 67878800 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 67878800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 67878800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 67878800 0x402859: main (ged.cpp:46)
+ n1: 67878800 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 67878800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 67878800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 67878800 0x402859: main (ged.cpp:46)
+ n1: 67878800 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 67878800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 67878800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 67878800 0x402859: main (ged.cpp:46)
+ n1: 33939400 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 33939400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 33939400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 33939400 0x402859: main (ged.cpp:46)
+ n1: 33939400 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 33939400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 33939400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 33939400 0x402859: main (ged.cpp:46)
+ n1: 13915154 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 13915154 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13915154 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13915154 0x402859: main (ged.cpp:46)
+ n1: 13915154 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 13915154 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 13915154 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 13915154 0x402859: main (ged.cpp:46)
+ n0: 8029044 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=9604358140
+mem_heap_B=590167748
+mem_heap_extra_B=28691836
+mem_stacks_B=0
+heap_tree=detailed
+n11: 590167748 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 137126400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 137126400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 137126400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 137126400 0x402859: main (ged.cpp:46)
+ n1: 74048256 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 74048256 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 74048256 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 74048256 0x402859: main (ged.cpp:46)
+ n1: 68563200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 68563200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 68563200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 68563200 0x402859: main (ged.cpp:46)
+ n1: 68563200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 68563200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 68563200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 68563200 0x402859: main (ged.cpp:46)
+ n1: 68563200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 68563200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 68563200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 68563200 0x402859: main (ged.cpp:46)
+ n1: 68563200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 68563200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 68563200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 68563200 0x402859: main (ged.cpp:46)
+ n1: 34281600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 34281600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 34281600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 34281600 0x402859: main (ged.cpp:46)
+ n1: 34281600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 34281600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 34281600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 34281600 0x402859: main (ged.cpp:46)
+ n1: 14055456 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 14055456 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14055456 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14055456 0x402859: main (ged.cpp:46)
+ n1: 14055456 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 14055456 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14055456 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14055456 0x402859: main (ged.cpp:46)
+ n0: 8066180 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=9832408655
+mem_heap_B=600442732
+mem_heap_extra_B=29185844
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=10140207011
+mem_heap_B=614297252
+mem_heap_extra_B=29851892
+mem_stacks_B=0
+heap_tree=detailed
+n11: 614297252 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 142772800 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 142772800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 142772800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 142772800 0x402859: main (ged.cpp:46)
+ n1: 77097312 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 77097312 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 77097312 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 77097312 0x402859: main (ged.cpp:46)
+ n1: 71386400 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 71386400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 71386400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 71386400 0x402859: main (ged.cpp:46)
+ n1: 71386400 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 71386400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 71386400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 71386400 0x402859: main (ged.cpp:46)
+ n1: 71386400 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 71386400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 71386400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 71386400 0x402859: main (ged.cpp:46)
+ n1: 71386400 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 71386400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 71386400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 71386400 0x402859: main (ged.cpp:46)
+ n1: 35693200 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 35693200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 35693200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 35693200 0x402859: main (ged.cpp:46)
+ n1: 35693200 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 35693200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 35693200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 35693200 0x402859: main (ged.cpp:46)
+ n1: 14634212 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 14634212 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14634212 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14634212 0x402859: main (ged.cpp:46)
+ n1: 14634212 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 14634212 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14634212 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14634212 0x402859: main (ged.cpp:46)
+ n0: 8226716 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=10264433323
+mem_heap_B=619873268
+mem_heap_extra_B=30120508
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=10278859524
+mem_heap_B=620528044
+mem_heap_extra_B=30152092
+mem_stacks_B=0
+heap_tree=detailed
+n11: 620528044 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 144233600 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 144233600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 144233600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 144233600 0x402859: main (ged.cpp:46)
+ n1: 77886144 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 77886144 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 77886144 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 77886144 0x402859: main (ged.cpp:46)
+ n1: 72116800 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 72116800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72116800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72116800 0x402859: main (ged.cpp:46)
+ n1: 72116800 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 72116800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72116800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72116800 0x402859: main (ged.cpp:46)
+ n1: 72116800 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 72116800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72116800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72116800 0x402859: main (ged.cpp:46)
+ n1: 72116800 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 72116800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72116800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72116800 0x402859: main (ged.cpp:46)
+ n1: 36058400 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 36058400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36058400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36058400 0x402859: main (ged.cpp:46)
+ n1: 36058400 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 36058400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36058400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36058400 0x402859: main (ged.cpp:46)
+ n1: 14783944 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 14783944 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14783944 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14783944 0x402859: main (ged.cpp:46)
+ n1: 14783944 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 14783944 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14783944 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14783944 0x402859: main (ged.cpp:46)
+ n0: 8256412 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=10403101706
+mem_heap_B=626149080
+mem_heap_extra_B=30422888
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=10416941017
+mem_heap_B=626777112
+mem_heap_extra_B=30453144
+mem_stacks_B=0
+heap_tree=detailed
+n11: 626777112 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 145698400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 145698400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 145698400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 145698400 0x402859: main (ged.cpp:46)
+ n1: 78677136 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 78677136 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78677136 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78677136 0x402859: main (ged.cpp:46)
+ n1: 72849200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 72849200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72849200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72849200 0x402859: main (ged.cpp:46)
+ n1: 72849200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 72849200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72849200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72849200 0x402859: main (ged.cpp:46)
+ n1: 72849200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 72849200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72849200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72849200 0x402859: main (ged.cpp:46)
+ n1: 72849200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 72849200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 72849200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 72849200 0x402859: main (ged.cpp:46)
+ n1: 36424600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 36424600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36424600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36424600 0x402859: main (ged.cpp:46)
+ n1: 36424600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 36424600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36424600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36424600 0x402859: main (ged.cpp:46)
+ n1: 14934086 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 14934086 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14934086 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14934086 0x402859: main (ged.cpp:46)
+ n1: 14934086 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 14934086 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 14934086 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 14934086 0x402859: main (ged.cpp:46)
+ n0: 8287404 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=10541201801
+mem_heap_B=632398428
+mem_heap_extra_B=30723996
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=10556003987
+mem_heap_B=633070480
+mem_heap_extra_B=30756400
+mem_stacks_B=0
+heap_tree=detailed
+n11: 633070480 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 147173600 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 147173600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 147173600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 147173600 0x402859: main (ged.cpp:46)
+ n1: 79473744 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 79473744 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 79473744 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 79473744 0x402859: main (ged.cpp:46)
+ n1: 73586800 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 73586800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 73586800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 73586800 0x402859: main (ged.cpp:46)
+ n1: 73586800 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 73586800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 73586800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 73586800 0x402859: main (ged.cpp:46)
+ n1: 73586800 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 73586800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 73586800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 73586800 0x402859: main (ged.cpp:46)
+ n1: 73586800 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 73586800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 73586800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 73586800 0x402859: main (ged.cpp:46)
+ n1: 36793400 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 36793400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36793400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36793400 0x402859: main (ged.cpp:46)
+ n1: 36793400 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 36793400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 36793400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 36793400 0x402859: main (ged.cpp:46)
+ n1: 15085294 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 15085294 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15085294 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15085294 0x402859: main (ged.cpp:46)
+ n1: 15085294 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 15085294 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15085294 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15085294 0x402859: main (ged.cpp:46)
+ n0: 8318548 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=10680251788
+mem_heap_B=638697296
+mem_heap_extra_B=31027440
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=10696961290
+mem_heap_B=639458028
+mem_heap_extra_B=31064124
+mem_stacks_B=0
+heap_tree=detailed
+n11: 639458028 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 148670400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 148670400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 148670400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 148670400 0x402859: main (ged.cpp:46)
+ n1: 80282016 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 80282016 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 80282016 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 80282016 0x402859: main (ged.cpp:46)
+ n1: 74335200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 74335200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 74335200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 74335200 0x402859: main (ged.cpp:46)
+ n1: 74335200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 74335200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 74335200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 74335200 0x402859: main (ged.cpp:46)
+ n1: 74335200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 74335200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 74335200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 74335200 0x402859: main (ged.cpp:46)
+ n1: 74335200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 74335200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 74335200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 74335200 0x402859: main (ged.cpp:46)
+ n1: 37167600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 37167600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 37167600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 37167600 0x402859: main (ged.cpp:46)
+ n1: 37167600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 37167600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 37167600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 37167600 0x402859: main (ged.cpp:46)
+ n1: 15238716 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 15238716 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15238716 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15238716 0x402859: main (ged.cpp:46)
+ n1: 15238716 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 15238716 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15238716 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15238716 0x402859: main (ged.cpp:46)
+ n0: 8352180 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=10821172296
+mem_heap_B=645092252
+mem_heap_extra_B=31335548
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=10837718502
+mem_heap_B=645860536
+mem_heap_extra_B=31372568
+mem_stacks_B=0
+heap_tree=detailed
+n11: 645860536 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 150170400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 150170400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 150170400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 150170400 0x402859: main (ged.cpp:46)
+ n1: 81092016 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 81092016 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 81092016 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 81092016 0x402859: main (ged.cpp:46)
+ n1: 75085200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 75085200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 75085200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 75085200 0x402859: main (ged.cpp:46)
+ n1: 75085200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 75085200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 75085200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 75085200 0x402859: main (ged.cpp:46)
+ n1: 75085200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 75085200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 75085200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 75085200 0x402859: main (ged.cpp:46)
+ n1: 75085200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 75085200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 75085200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 75085200 0x402859: main (ged.cpp:46)
+ n1: 37542600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 37542600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 37542600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 37542600 0x402859: main (ged.cpp:46)
+ n1: 37542600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 37542600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 37542600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 37542600 0x402859: main (ged.cpp:46)
+ n1: 15392466 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 15392466 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15392466 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15392466 0x402859: main (ged.cpp:46)
+ n1: 15392466 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 15392466 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15392466 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15392466 0x402859: main (ged.cpp:46)
+ n0: 8387188 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=10961941843
+mem_heap_B=651594812
+mem_heap_extra_B=31648828
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=10977878833
+mem_heap_B=652339004
+mem_heap_extra_B=31684708
+mem_stacks_B=0
+heap_tree=detailed
+n11: 652339004 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 151688000 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 151688000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 151688000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 151688000 0x402859: main (ged.cpp:46)
+ n1: 81911520 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 81911520 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 81911520 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 81911520 0x402859: main (ged.cpp:46)
+ n1: 75844000 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 75844000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 75844000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 75844000 0x402859: main (ged.cpp:46)
+ n1: 75844000 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 75844000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 75844000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 75844000 0x402859: main (ged.cpp:46)
+ n1: 75844000 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 75844000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 75844000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 75844000 0x402859: main (ged.cpp:46)
+ n1: 75844000 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 75844000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 75844000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 75844000 0x402859: main (ged.cpp:46)
+ n1: 37922000 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 37922000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 37922000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 37922000 0x402859: main (ged.cpp:46)
+ n1: 37922000 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 37922000 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 37922000 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 37922000 0x402859: main (ged.cpp:46)
+ n1: 15548020 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 15548020 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15548020 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15548020 0x402859: main (ged.cpp:46)
+ n1: 15548020 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 15548020 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15548020 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15548020 0x402859: main (ged.cpp:46)
+ n0: 8423444 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=11102116827
+mem_heap_B=658171352
+mem_heap_extra_B=31965672
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=11116630432
+mem_heap_B=658871476
+mem_heap_extra_B=31999428
+mem_stacks_B=0
+heap_tree=detailed
+n11: 658871476 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 153217600 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 153217600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 153217600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 153217600 0x402859: main (ged.cpp:46)
+ n1: 82737504 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 82737504 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 82737504 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 82737504 0x402859: main (ged.cpp:46)
+ n1: 76608800 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 76608800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 76608800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 76608800 0x402859: main (ged.cpp:46)
+ n1: 76608800 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 76608800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 76608800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 76608800 0x402859: main (ged.cpp:46)
+ n1: 76608800 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 76608800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 76608800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 76608800 0x402859: main (ged.cpp:46)
+ n1: 76608800 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 76608800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 76608800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 76608800 0x402859: main (ged.cpp:46)
+ n1: 38304400 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 38304400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38304400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38304400 0x402859: main (ged.cpp:46)
+ n1: 38304400 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 38304400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38304400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38304400 0x402859: main (ged.cpp:46)
+ n1: 15704804 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 15704804 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15704804 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15704804 0x402859: main (ged.cpp:46)
+ n1: 15704804 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 15704804 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15704804 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15704804 0x402859: main (ged.cpp:46)
+ n0: 8462764 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=11240855307
+mem_heap_B=665007480
+mem_heap_extra_B=32295016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=11249672895
+mem_heap_B=665472296
+mem_heap_extra_B=32317416
+mem_stacks_B=0
+heap_tree=detailed
+n11: 665472296 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 154762400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 154762400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 154762400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 154762400 0x402859: main (ged.cpp:46)
+ n1: 83571696 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 83571696 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 83571696 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 83571696 0x402859: main (ged.cpp:46)
+ n1: 77381200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 77381200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 77381200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 77381200 0x402859: main (ged.cpp:46)
+ n1: 77381200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 77381200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 77381200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 77381200 0x402859: main (ged.cpp:46)
+ n1: 77381200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 77381200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 77381200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 77381200 0x402859: main (ged.cpp:46)
+ n1: 77381200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 77381200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 77381200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 77381200 0x402859: main (ged.cpp:46)
+ n1: 38690600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 38690600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38690600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38690600 0x402859: main (ged.cpp:46)
+ n1: 38690600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 38690600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 38690600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 38690600 0x402859: main (ged.cpp:46)
+ n1: 15863146 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 15863146 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15863146 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15863146 0x402859: main (ged.cpp:46)
+ n1: 15863146 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 15863146 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 15863146 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 15863146 0x402859: main (ged.cpp:46)
+ n0: 8505908 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=11372269078
+mem_heap_B=672151344
+mem_heap_extra_B=32639816
+mem_stacks_B=0
+heap_tree=detailed
+n11: 672151344 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 156327200 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 156327200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 156327200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 156327200 0x402859: main (ged.cpp:46)
+ n1: 84416688 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 84416688 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 84416688 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 84416688 0x402859: main (ged.cpp:46)
+ n1: 78163600 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 78163600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78163600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78163600 0x402859: main (ged.cpp:46)
+ n1: 78163600 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 78163600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78163600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78163600 0x402859: main (ged.cpp:46)
+ n1: 78163600 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 78163600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78163600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78163600 0x402859: main (ged.cpp:46)
+ n1: 78163600 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 78163600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78163600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78163600 0x402859: main (ged.cpp:46)
+ n1: 39081800 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 39081800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39081800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39081800 0x402859: main (ged.cpp:46)
+ n1: 39081800 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 39081800 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39081800 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39081800 0x402859: main (ged.cpp:46)
+ n1: 16023538 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 16023538 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 16023538 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 16023538 0x402859: main (ged.cpp:46)
+ n1: 16023538 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 16023538 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 16023538 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 16023538 0x402859: main (ged.cpp:46)
+ n0: 8542380 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=11484237846
+mem_heap_B=678875940
+mem_heap_extra_B=32964836
+mem_stacks_B=0
+heap_tree=peak
+n11: 678875940 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 157902400 0x40AECC: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:51)
+  n1: 157902400 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 157902400 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 157902400 0x402859: main (ged.cpp:46)
+ n1: 85267296 0x40ABBB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.cpp:545)
+  n1: 85267296 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 85267296 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 85267296 0x402859: main (ged.cpp:46)
+ n1: 78951200 0x40AD48: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:43)
+  n1: 78951200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78951200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78951200 0x402859: main (ged.cpp:46)
+ n1: 78951200 0x40AD88: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:44)
+  n1: 78951200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78951200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78951200 0x402859: main (ged.cpp:46)
+ n1: 78951200 0x40AF14: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:53)
+  n1: 78951200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78951200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78951200 0x402859: main (ged.cpp:46)
+ n1: 78951200 0x40AF3E: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:55)
+  n1: 78951200 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 78951200 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 78951200 0x402859: main (ged.cpp:46)
+ n1: 39475600 0x40AC6C: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 39475600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39475600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39475600 0x402859: main (ged.cpp:46)
+ n1: 39475600 0x40ACDF: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (verifyGraph.h:42)
+  n1: 39475600 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 39475600 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 39475600 0x402859: main (ged.cpp:46)
+ n1: 16184996 0x40ADCB: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:47)
+  n1: 16184996 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 16184996 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 16184996 0x402859: main (ged.cpp:46)
+ n1: 16184996 0x40AE0B: treeNode::generateSuccessors(int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (treeNode.h:48)
+  n1: 16184996 0x40F565: BSEditDistance::BeamSearchOnce(int&, int&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) (BSED.h:234)
+   n1: 16184996 0x412454: BSEditDistance::getEditDistance(graph&, graph&, int) (BSED.h:272)
+    n0: 16184996 0x402859: main (ged.cpp:46)
+ n0: 8580252 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=11608436562
+mem_heap_B=319549120
+mem_heap_extra_B=15677928
+mem_stacks_B=0
+heap_tree=empty

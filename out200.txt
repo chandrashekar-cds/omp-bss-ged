@@ -1,0 +1,8 @@
+Hi..inside get-edit-dist 
+g1.edgeinfo over...
+g2.edgeinfo over...
+s1 >= s2
+GED(0,0) = 21
+total expand node 199200
+initFilter and total results 1 1
+Total graph edit distance computation time 3.65642

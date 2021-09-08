@@ -1,0 +1,2004 @@
+Hi..inside get-edit-dist 
+g1.edgeinfo over...
+g2.edgeinfo over...
+init common labels done
+lower_bound = 3 bound = 2100
+some initializations done
+4 for loops done..  size1 = 100size2 = 100
+ common::degreeEditDistance:	Time taken(ms) = 0
+ safely back from degree edit dist
+tmp = 4 ie = 2 de = 2
+tmp = 4 commonVertex = 97
+lower_bound = 7 bound = 2100
+ no of eq classes = 0
+ g2.divideGroup:	Time taken(ms) = 0
+ no of eq classes = 0
+ g1.divideGroup:	Time taken(ms) = 0
+s1 >= s2
+Inside gensucc
+uG2.v =  100
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  99
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  98
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  97
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  96
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  95
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  94
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  93
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  92
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  91
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  90
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  89
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  88
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  87
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  86
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  85
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  84
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  83
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  82
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  81
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  80
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  79
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  78
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  77
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  76
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  75
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  74
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  73
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  72
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  71
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  70
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  69
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  68
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  67
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  66
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  65
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  64
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  63
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  62
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  61
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  60
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  59
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  58
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  57
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  56
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  55
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  54
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  53
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  52
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  51
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  50
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  49
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  48
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  47
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  46
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  45
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  44
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  43
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  42
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  41
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  40
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  39
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  38
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  37
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  36
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  35
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  34
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  33
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  32
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  31
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  30
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  29
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  28
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  27
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  26
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  25
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  24
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  23
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  22
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  21
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  20
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  19
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  18
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  17
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  16
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  15
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  14
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  13
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  12
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  11
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  10
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  9
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  8
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  7
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  6
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  5
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  4
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  3
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  2
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+Inside gensucc
+uG2.v =  1
+ BeamSearchOnce:	Time taken(ms) = 343.75
+GED(0,0) = 13
+total expand node 49600
+initFilter and total results 1 1
+Total graph edit distance computation time 0.37483

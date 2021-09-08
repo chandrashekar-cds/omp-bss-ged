@@ -1,0 +1,14 @@
+Hi..inside get-edit-dist 
+g1.edgeinfo over...
+g2.edgeinfo over...
+init common labels done
+lower_bound = 6 bound = 6300
+entering memset
+memset done
+some initializations done
+4 for loops done..  size1 = 300size2 = 300
+ safely back from degree edit dist
+tmp = 8 ie = 4 de = 4
+tmp = 8 commonVertex = 294
+lower_bound = 14 bound = 6300
+s1 >= s2
