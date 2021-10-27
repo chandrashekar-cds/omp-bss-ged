@@ -229,22 +229,66 @@ public:
 		PNode node; int size;
 		//double elapsed_secs=0;
 		int getout = 0;
-		//cout<<"Inside BeamSearchOnce.."<<endl;
+		cout<<"Inside BeamSearchOnce.."<<endl;
     //#pragma omp parallel 
 	//change the while loop - conditions etc
 		while ((!PQL.empty() || !PQLL.empty()) && !getout)
 		{
+			cout<<"Hi"<<endl;
 			size = 0;
 			int s = PQL.size();
-            omp_set_num_threads(min(s,MAX_THREADS));         
-		#pragma omp parallel for private(node)
+			cout<<"\n No of nodes to be processed = "<<s<<endl;
+            omp_set_num_threads(min(s,MAX_THREADS));
+			/*
+			int size1 = 0, max1 = 0;     
+			memset(tmpDegree1, 0, max_d_1 * sizeof(u16));
+		 	memset(tmpDegree2, 0, max_d_2 * sizeof(u16));
+			for (int i = 0; i < closed[0][0]->uG1.gs; i++)
+			{
+				if (max1 < succ_degree_1[i])
+					max1 = succ_degree_1[i];
+				tmpDegree1[succ_degree_1[i]]++;
+			}
+			for (int i = max1; i >= 0; i--)
+			{
+				int len = tmpDegree1[i]; //chongdu 
+				for (int l = 0; l < len; l++)
+					ds1[size1++] = i;
+			}
+			cout<<"\nContents of ds1 - "<<endl;
+			//int s = *(&ds1 + 1) - ds1;
+			for(int k=0;k<size1;k++)
+				cout<<" "<<ds1[k];
+			ds1_size = size1;*/    
+		#pragma omp parallel for private(node,ds1,ds2,ds1_size)
 			//for (int i = 0;!PQL.empty() && !getout;i++)
 			for (int i = 0;i<s;i++)
 			{
 				//node = PQL.top(); PQL.pop();
 				//node = PQL.back(); PQL.pop_back();
-
+                cout<<"Inside for.. thread   "<<omp_get_thread_num()<<endl; 
 				node = PQL[i];
+				
+			int size1 = 0, max1 = 0;     
+			memset(tmpDegree1, 0, max_d_1 * sizeof(u16));
+		 	memset(tmpDegree2, 0, max_d_2 * sizeof(u16));
+			for (int i = 0; i < node->uG1.gs; i++)
+			{
+				if (max1 < succ_degree_1[i])
+					max1 = succ_degree_1[i];
+				tmpDegree1[succ_degree_1[i]]++;
+			}
+			for (int i = max1; i >= 0; i--)
+			{
+				int len = tmpDegree1[i]; //chongdu 
+				for (int l = 0; l < len; l++)
+					ds1[size1++] = i;
+			}
+			cout<<"\nContents of ds1 - "<<endl;
+			//int s = *(&ds1 + 1) - ds1;
+			for(int k=0;k<size1;k++)
+				cout<<" "<<ds1[k];
+			ds1_size = size1;
 				if (node->allverifyGraphNodesUsed())
 				{
 					//assert(node->deep < bound);
@@ -259,11 +303,12 @@ public:
                     	node->generateSuccessors(bound, group_1, group_2);       //imp 
             		clock_t end = clock();
             		double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
-            		//cout<<" generateSuccessors:"<<'\t'<<"Time taken(ms) = "<<elapsed_secs*1000<<endl;
+            		cout<<" generateSuccessors:"<<'\t'<<"Time taken(ms) = "<<elapsed_secs*1000<<endl;
 					lvlcounter++;
 					node->visited = true;
 					#pragma omp critical
            					totalExpandNode += node->childs.size();
+	                    				
 	                /*
 	                cout<<"###################################################################### "<<endl; 
         	        cout<<"*****************Contents of nodes at level "<<lvlcounter<<"***********************"<<endl;	
@@ -290,15 +335,20 @@ public:
 					//cout<<" totalExpandNode - "<<totalExpandNode<<endl;*/
 					
 				}
-				#pragma omp critical
+				//#pragma omp critical
 					expandSuccNode(node->childs, succ, size);                   // imp
 		   	} // end of for loop
+			
 			// need to modify this section too.. first need is to get it running for sequential
+				cout<<"Number of children spawned = "<<size<<endl;
 				pruneLayer(succ, PQLL, size);
 			PQL = PQLL; PQLL = nullPQL;
 			if (PQL.empty() && PQLL.empty())
-				//return;
-				getout = 1;
+			{ 
+				cout<<"Both queues empty.."<<endl;
+				return;
+			}
+				
 			if(!getout)
 			{
 				l = l + 1;
@@ -327,7 +377,8 @@ public:
 		startPQL.push_back(start);
 		closed[0] = startPQL;  // initializing a vector of priority queue entries with startPQL
 
-       
+        cout<<"No of nodes = "<<start->uG1.gs;
+		
 
 		while (!(bs.empty() || flg))
 		{
@@ -365,6 +416,7 @@ public:
 		} // end of WHILE
 	   
 		if (start) freeNode(start);
+		cout<<"T = "<<T<<"GED = "<<ged<<endl;
 		if (T == ged) return -1;
 		else return ged;
 	}
@@ -463,7 +515,7 @@ public:
 				ds2[size2++] = i;
 		}
 
-		cout<<"4 for loops done..  "<<"size1 = "<<size1<<"size2 = "<<size2<<endl;
+		cout<<"size1 = "<<size1<<"size2 = "<<size2<<endl;
 		clock_t begin = clock();
                     common::degreeEditDistance(ds1, size1, ds2, size2, ie, de); //time this
         clock_t end = clock();

@@ -10,7 +10,7 @@ int MAX_THREADS = 0;
 int h = 0;
 int lvlcounter = 0;
 int memfootprint = 0;
-
+extern int ds1_size = 0;
 //typedef std::map<int, int> Dictmap;
 /*template <typename T>
 int mapfind(T mapping, int key, int defalt)
@@ -49,6 +49,10 @@ void printmap(T myMap)
         memfootprint += 2;
     }
 }*/
+void minsert (vector<u16> &m, int ind, u16 val) {  if (ind >= m.size())
+                                                            m.resize(ind+1,0xff);
+                                                        m[ind] = val;    
+                                                    }
 
 vector<vector<int > > adjList1(0, vector<int>());
 vector<vector<int > > adjList2(0, vector<int>());

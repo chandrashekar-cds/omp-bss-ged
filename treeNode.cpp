@@ -266,7 +266,7 @@ int treeNode::degree_distance_1(int &le1, int &le2, int &v1, int &v2, int &start
 		return dis;
 	}
 	else
-	{
+	{    /*
 		memset(tmpDegree1, 0, max_d_1 * sizeof(u16));
 		memset(tmpDegree2, 0, max_d_2 * sizeof(u16));
 		for (; i < this->uG1.gs; i++)
@@ -281,6 +281,12 @@ int treeNode::degree_distance_1(int &le1, int &le2, int &v1, int &v2, int &start
 			for (int l = 0; l < len; l++)
 				ds1[size1++] = i;
 		}
+		cout<<"\nContents of ds1 - "<<endl;
+		//int s = *(&ds1 + 1) - ds1;
+		for(int k=0;k<size1;k++)
+			cout<<" "<<ds1[k];
+		*/
+	    size1 = ds1_size;	
 		for (i = 0; i < vs.size(); i++)
 		{
 			to = vs[i];
@@ -295,6 +301,12 @@ int treeNode::degree_distance_1(int &le1, int &le2, int &v1, int &v2, int &start
 			for (int l = 0; l < len; l++)
 				ds2[size2++] = i;
 		}
+
+        cout<<"\nContents of ds2 - "<<endl;
+		
+		for(int k=0;k<size2;k++)
+			cout<<" "<<ds2[k];
+
 		common::degreeEditDistance(ds1, size1, ds2, size2, le1, le2);
 	}
 	return dis;
@@ -411,6 +423,7 @@ int treeNode::labelEditDistance(int &startIndex, int &endIndex, int &cost, int &
 	memcpy(succ_degree_2, Degree2, sizeof(u16) * this->uG2.gs);
 	this->updateVertexDegree(adjList1, succ_degree_1, startIndex);
 	this->updateVertexDegree(adjList2, succ_degree_2, endIndex);
+	cout<<"\n Label edit distance - calling degree_distance"<<endl;
 	if (endIndex == DELETED)
 		dis = this->degree_distance_1(ie, de, v1, v2, startIndex, endIndex, vs2, -1);
 	else
@@ -472,7 +485,7 @@ void treeNode::generateSuccessors(int &bound, vector<int> &group_1, vector<int> 
 	bool flag = false;
 	if (this->deep + this->ECost >= bound) return;
 
-    //cout<<"Inside gensucc"<<endl;
+    cout<<"Inside gensucc"<<endl;
 
 	//cout<<"uG1.v =  "<<uG1.v<<" uG2.v = "<<uG2.v<<endl;
     //cout<<"uG1.gs =  "<<uG1.gs<<" uG2.gs = "<<uG2.gs<<endl;
@@ -524,7 +537,7 @@ void treeNode::generateSuccessors(int &bound, vector<int> &group_1, vector<int> 
 		int rankj = uG1.gs - uG1.v; // what does this rank info do?
 		//cout<<"vs1 = "<<vs1.size()<<endl;
 		//for(int k=0;k<vs2.size();k++)
-		//cout<<"uG2.v =  "<<uG2.v<<endl;
+		cout<<"uG2.v =  "<<uG2.v<<endl;
 		#if 1
 		 	if (VERTEXFLAG2) memset(groupFlag2, 0, sizeof(bool) * this->uG2.gs);
 		 #endif
@@ -563,7 +576,7 @@ void treeNode::generateSuccessors(int &bound, vector<int> &group_1, vector<int> 
 			cost += processverifyGraphEdges(startIndex, endIndex);
 			int v1 = this->uG1.v - 1, v2 = this->uG2.v - 1;
 			int e1, e2, cel, estimate_cost;
-			#pragma omp critical
+			//#pragma omp critical
 			estimate_cost = this->labelEditDistance(startIndex, endIndex, cost, v1, v2, cvl, e1, e2, cel, bound, flag);
 
 			if (flag)
@@ -613,6 +626,7 @@ void treeNode::generateSuccessors(int &bound, vector<int> &group_1, vector<int> 
 			int cvl = computeCVL(lv1, deleted.verifyGraphNodeStr, lv2, DELETED);
 			int v1 = this->uG1.v - 1, v2 = this->uG2.v;
 			int e1, e2, cel, estimate_cost;
+			cout<<"Going to estimate cost .. "<<endl;
 			estimate_cost = labelEditDistance(i, DELETED, cost, v1, v2, cvl, e1, e2, cel, bound, flag);
 			if (flag)
 			{

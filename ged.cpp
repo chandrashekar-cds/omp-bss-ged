@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
 		FLAG = true;
 	}
 	cout << "total expand node " << totalExpandNode << endl;
-	cout << "total no of entries used by maps " << memfootprint << endl;
+	//cout << "total no of entries used by maps " << memfootprint << endl;
 	cout << "initFilter and total results " << initFilter  << " " << sum << endl;
 	gettimeofday(&end, NULL); 
 	timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec; 

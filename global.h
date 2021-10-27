@@ -13,7 +13,7 @@ extern int MAX_THREADS;
 extern int h;
 extern int lvlcounter;
 extern int memfootprint;
-
+extern int ds1_size;
 typedef std::map<int, int> Dictmap;
 typedef std::map<u16, u16> Dictmapu16;
 
@@ -43,11 +43,7 @@ auto mfind = [] (vector<u16> m, int i)->u16 { if (i < m.size())
                                               return m[i];
                                               else return 0; };
 
-auto minsert = [&] (vector<u16> &m, int ind, u16 val) {  if (ind >= m.size())
-                                                            m.resize(ind+1,0xff);
-                                                        m[ind] = val;    
-                                                    };
-
+void minsert (vector<u16> &m, int ind, u16 val);
 /*auto minsert = [&] (vector<u16> &m, int ind, u16 val) {  if (ind < m.size())
                                                             m[ind] = val;
                                                         else if(ind == m.size())
@@ -58,7 +54,7 @@ auto minsert = [&] (vector<u16> &m, int ind, u16 val) {  if (ind >= m.size())
                                                             }    
                                                     };
 */
-
+/*
 auto cfind = [] (vector<int> m, int i) { if (i < m.size()) 
                                               return m[i];
                                               else return 0; };
@@ -68,7 +64,7 @@ auto cinsert = [&] (vector<int> &m, int ind, int val) {  if (ind >= m.size())
                                                         m[ind] = val;    
                                                     };
 
-
+*/
 
 extern vector<vector<int > > adjList1;
 extern vector<vector<int > > adjList2;
