@@ -1,5 +1,5 @@
 # bss-ged-gpu
-BSS_GED with GPU execution enabled ( Due credits to the original authors of BSS_GED; its code can be accessed @ https://github.com/Hongweihuo-Lab/BSS-GED/ )
+BSS_GED with OpenMP execution enabled ( Due credits to the original authors of BSS_GED; its code can be accessed @ https://github.com/Hongweihuo-Lab/BSS-GED/ )
 
 BSS_GED is a vertex-mapping based method for graph edit distance (GED) computation. It employs the beam-stack
 search paradigm, combined with two specially designed heuristics to improve the GED computation, achieving a trade-off between memory utilization and expensive backtracking calls. Also, a novel strategy is proposed to identify invalid and redundant mappings, leading to a reduced search space. 
